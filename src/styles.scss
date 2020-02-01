@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+
+input, button{
+    &:focus,
+    &:active{
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.ft-10{
+    font-size: 10px;
+}
+
+.ft-12{
+    font-size: 12px;
+}
+.ft-14{
+    font-size: 14px;
+}
+.ft-16{
+    font-size: 16px;
+}
+.ft-18{
+    font-size: 18px;
+}
+.ft-20{
+    font-size: 20px;
+}
+.ft-22{
+    font-size: 22px;
+}
+
+.green{
+    color: #00cc00;
+}
+
+.white{
+    color: #fff;
+}
+
+.orange{
+    color: orange;
+}
+
+.social-icons{
+cursor: pointer;
+
+    a{
+        color: #000;
+        font-size: 20px;
+    &:hover,
+    &:active{
+        text-decoration: none;
+    }
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+    .carousel {
+    height: 100%;
+    .carousel-inner{
+        height: 100%;
+
+        .carousel-item.active, .carousel-item {
+            height: 100% !important;
+
+        }
+    }
+}

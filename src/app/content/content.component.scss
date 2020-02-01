@@ -1,0 +1,45 @@
+.heading{
+    font-size: 66px;
+}
+
+.sub-heading{
+    font-size: 28px;
+}
+
+.store-btn{
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+
+    &:hover{
+        opacity: .7;
+    }
+}
+
+.apple-icon{
+    img{
+        filter: invert(1);
+    }
+}
+
+.circle-icons{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 0 #a6a6a6;
+    cursor: pointer;
+    i{
+        font-size: 22px;
+        color: orange;
+    }
+
+    &:hover{
+        height: 55px;
+        width: 55px;
+
+        border: 2px solid orange;
+        i{
+            color: #00cc00;
+        }
+    }
+}

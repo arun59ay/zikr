@@ -1,0 +1,155 @@
+.universe-slide{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#universe {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+    
+  #galaxy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #sun, .planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    border-radius: 50%;
+  }
+  
+  #sun {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../../assets/icons/centre-img.jpg);
+  }
+  
+  .planet {
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed #00cc00;
+    border-radius: 50%;
+    animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  
+  /* Orbit sizes */
+  #mercury.orbit {
+    width: 6em;
+    height: 6em;
+    margin-top: -3em;
+    margin-left: -3em;
+  }
+
+  .inner-orbit-div{
+      position: relative;
+      top: 8%;
+  }
+
+  .inner-orbit{
+    border: 1px dashed #00cc00;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    margin: auto;
+  }
+  
+  /* Planet starting positions */
+#mercury .planet{
+    animation-name: shadow-mercury;
+  animation-duration: 10s;
+}
+
+  #mercury .planet-1 {
+    left: 0%;
+    top: 50%; 
+    background: url(../../assets/icons/get-money.svg);
+  }
+
+  #mercury .planet-2 {
+    left: 50%;
+    top: 100%; 
+    background: url(../../assets/icons/hand.svg);
+  }
+
+  #mercury .planet-3 {
+    top: 50%;
+    left: 100%; 
+    background: url(../../assets/icons/ibooks.svg);
+  }
+  #mercury .planet-4 {
+    left: 50%;
+    top: 0%; 
+    background: url(../../assets/icons/brand.svg);
+  }
+
+  #mercury .planet-5 {
+    left: 0%;
+    top: 50%; 
+    background: url(../../assets/icons/add.svg);
+  }
+
+  #mercury .planet-6 {
+    left: 50%;
+    top: 100%; 
+    background: url(../../assets/icons/company.svg);
+  }
+
+  #mercury .planet-7 {
+    top: 50%;
+    left: 100%; 
+    background: url(../../assets/icons/instagram-sketched.svg);
+  }
+  #mercury .planet-8 {
+    left: 50%;
+    top: 0%; 
+    background: url(../../assets/icons/hand.svg);
+  }
+   
+  /* Planet sizes */
+  #sun {
+      font-size: 10em;
+  }
+  #mercury {
+      font-size: 4em;
+  }
+  @keyframes orbit {
+    0%   { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(360deg); }
+  }
+
+  #mercury.orbit {
+    animation-duration: 10s;
+  }
+
+  @keyframes shadow-mercury {
+    0%     { box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); /* top */ }
+    25%    { box-shadow: inset 16px 0 8px rgba(0, 0, 0, 0.5); /* left */ }
+    50%    { box-shadow: inset 40px -20px 16px rgba(0, 0, 0, 0.5); /* bottom */ }
+    50.01% { box-shadow: inset -40px -20px 16px rgba(0, 0, 0, 0.5); /* bottom */ }
+    75%    { box-shadow: inset -16px 0 8px rgba(0, 0, 0, 0.5); /* right */ }
+    100%   { box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); /* top */ }
+  }
